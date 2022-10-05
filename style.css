@@ -1,0 +1,133 @@
+@font-face {
+  font-family: wafont;
+  src: url(fonta/Nimbus.ttf);
+}
+
+:root {
+  --background: #111b21;
+  --navbar: #202c33;
+  --text: #fff;
+  --text-second: #8696a0;
+  --primary: #00a884;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: wafont;
+  background: var(--background);
+}
+ul {
+  list-style: none;
+
+}
+.list {
+  color: var(--text-second);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+a {
+  text-decoration: none;
+  color: var(--text-second);
+}
+.active {
+  border-bottom: solid 2.5px var(--primary);
+}
+.navbar-home {
+  background: var(--navbar);
+  padding: 15px 0px 0px;
+}
+.navbar-item {
+  display: flex;
+  padding: 0px 15px 10px;
+  justify-content: space-between;
+}
+.navbar-item li {
+  display: inline-block;
+  font-size: 1.3rem;
+  color: var(--text-second);
+}
+.navbar-home h1 {
+  font-weight: 50;
+  font-size: 1.5rem;
+  color: var(--text-second);
+}
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0px 0px;
+}
+.menu li {
+  color: var(--text-second);
+  font-weight: bold;
+  padding: 0px 15px 15px;
+}
+.menu li:hover {
+  color: var(--primary);
+  border-bottom: solid 2.5px var(--primary);
+
+}
+.list-chat {
+  margin-top: 25px;
+  padding: 0px 15px;
+}
+.chat-item {
+  display: flex;
+  justify-content: space-between;
+}
+.list-chat img {
+  width: 45px;
+  border-radius: 50%;
+  float: left;
+}
+p.name {
+
+  display: inline-block;
+  margin-left: 10px;
+  margin-top: 5px;
+  color: #fff;
+  font-size: 1rem;
+}
+p.msg {
+  display: inline-block;
+  margin-left: 10px;
+  margin-top: 5px;
+  color: var(--text-second);
+  font-size: .9rem;
+  font-weight: 500;
+}
+p.msg-new {
+  display: inline-block;
+  margin-left: 10px;
+  margin-top: 5px;
+  color: var(--background);
+  font-size: .6rem;
+  font-weight: 500;
+  background: var(--primary);
+  padding: 5px 8px;
+  font-weight: bold;
+  border-radius: 50%;
+  margin-left: 15px;
+}
+p.msg-time {
+  display: inline-block;
+  margin-left: 10px;
+  margin-top: 5px;
+  color: var(--text-second);
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.chat-button {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  color: white;
+  background: var(--primary);
+  padding: 17px 19px;
+  font-size: 1.2rem;
+  margin-right: 20px;
+  margin-bottom: 25px;
+  border-radius: 50%;
+}
